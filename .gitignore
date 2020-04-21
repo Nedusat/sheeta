@@ -1,3 +1,9 @@
+# Vim Swap Files
+*.swp
+
+# Binary Files
+*.bin
+
 # Prerequisites
 *.d
 
