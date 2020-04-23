@@ -1,6 +1,6 @@
 #include "kernel.h"
 
-void kernel_init()
+int kernel_init()
 {
-	
+	return 0;
 }
