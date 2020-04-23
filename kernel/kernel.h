@@ -16,12 +16,14 @@ struct command_inst {
 
 };
 
-struct command_pool {
+struct command_buffer {
 
-  
+  uint32_t length;
+  command_inst* buffer;
 
 };
 
 int kernel_init();
+int kernel_terminate();
 
 #endif

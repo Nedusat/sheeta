@@ -22,4 +22,7 @@ void IMFS_push_file(IMFS_file* file);
 IMFS_file* IMFS_pull_file(const char* filepath);
 void IMFS_erase_file(const char* filepath);
 
+void IMFS_init();
+void IMFS_terminate();
+
 #endif
