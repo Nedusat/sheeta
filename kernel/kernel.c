@@ -1,10 +1,8 @@
-void dummy_test_entrypoint()
+#include "kernel.h"
+
+void kernel_init();
+
+void kernel_init()
 {
 	
-}
-
-void main()
-{
-	char* video_memory = (char*) 0xb8000;
-	*video_memory = 'X';	
 }
