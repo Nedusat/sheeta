@@ -1,5 +1,5 @@
-csrc = $(wildcard kernel/*.c drivers/*.c)
-headers = $(wildcard kernel/*.h drivers/*.h)
+csrc = $(wildcard kernel/*.c kernel/*/*.c kernel/*/*/*.c)
+headers = $(wildcard kernel/*.h kernel/*/*.h kernel/*/*/*.h)
 
 obj = ${csrc:.c=.o}
 
@@ -17,7 +17,7 @@ run: sheeta.bin
 	qemu-system-x86_64 -fda sheeta.bin
 
 %.o: %.c ${headers}
-	${cc} ${cflags} -ffreestanding -c $< -o $@
+	${cc} -Ikernel/include ${cflags} -ffreestanding -c $< -o $@
 
 %.o: %.asm
 	nasm $< -f elf64 -o $@

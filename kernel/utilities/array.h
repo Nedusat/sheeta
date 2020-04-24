@@ -8,6 +8,6 @@ struct array {
   void* items;
 };
 
-void push_arr(array* arr, uint32_t length, void* items);
+void push_arr(struct array* arr, uint32_t length, void* items);
 
 #endif

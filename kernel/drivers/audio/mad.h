@@ -3,7 +3,7 @@
 #ifndef MAD_H
   #define MAD_H
 
-#include "../../definitions.h"
+#include <def.h>
 
 enum MAD_audio_format : unsigned char {
   MAD_AUD_FORMAT_S8BIT = 0x1,
